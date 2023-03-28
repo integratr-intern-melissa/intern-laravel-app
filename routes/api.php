@@ -18,6 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/persons', [PersonController::class, 'index']);
 Route::post('/persons', [PersonController::class, 'store']);
-Route::get('/persons', [PersonController::class, 'show']);
+Route::get('/persons/{id}', [PersonController::class, 'show']);
 Route::put('/persons/{id}', [PersonController::class, 'update']);
 Route::delete('/persons/{id}', [PersonController::class, 'destroy']);
